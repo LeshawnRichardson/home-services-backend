@@ -4,6 +4,9 @@ require('dotenv').config()
 //connect database
 require('./config/database')
 
+// ===== MIDDLEWARES =====
+app.use(express.json())
+
 // ===== ROUTES =====
 //Services
 app.use('/api/v1/services', require('./routes/api/services.js'))
