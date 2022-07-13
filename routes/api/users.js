@@ -6,8 +6,9 @@ const usersCtrl = require('../../controllers/api/users')
 router.post('/', usersCtrl.create)
 
 // POST /api/v1/users/login
-//router.post('/login', usersCtrl.login)
+router.post('/login', usersCtrl.login)
 
+// The below routes should not be accessiable to authorized users
 // GET /api/v1/users/:id
 router.get('/:id', usersCtrl.show)
 

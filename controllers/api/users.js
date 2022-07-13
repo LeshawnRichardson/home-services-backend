@@ -12,7 +12,7 @@ const create = async (req, res) => {
     }
 }
 
-/// Login
+// Login
 const login = async (req, res) => {
     try {
         // Find user by email
