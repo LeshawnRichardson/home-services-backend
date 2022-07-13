@@ -9,7 +9,9 @@ app.use(express.json())
 
 // ===== ROUTES =====
 //Services
-app.use('/api/v1/services', require('./routes/api/services.js'))
+app.use('/api/v1/services', require('./routes/api/services'))
+// Users
+app.use('/api/v1/users', require('./routes/api/users'))
 
 // ===== PORT =====
 const port = 8080;
